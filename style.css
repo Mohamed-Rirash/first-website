@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
-*{
+
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-nav{
+nav {
     background-color: rgb(6, 241, 178);
-   display: flex;
+    display: flex;
     justify-content: space-between;
     height: 70px;
     align-items: center;
     padding: 0px 16px;
 }
-a{
+
+a {
     font-weight: 700;
     font-size: 24px;
     color: #000;
     text-decoration: none;
 }
-header{
+
+header {
     background-color: #cadcff;
     height: calc(100vh - 70px);
     padding: 24px;
@@ -28,14 +31,17 @@ header{
     align-items: center;
     justify-content: center;
 }
-h1{
+
+h1 {
     font-size: 72px;
 }
-.subheding{
+
+.subheding {
     font-size: 36px;
     padding: 16px 0px 24px 0px;
 }
-button{
+
+button {
     background-color: #05c7cf;
     color: #fff;
     padding: 8px 16px;
@@ -43,17 +49,21 @@ button{
     border: none;
     cursor: pointer;
 }
-.logo{
+
+.logo {
     width: 300px;
 }
-ul{
+
+ul {
     display: flex;
 }
-li{
+
+li {
     list-style: none;
     padding-left: 16px;
 }
-.raw{
+
+.raw {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
@@ -65,38 +75,43 @@ li{
 #About,
 #projects,
 #Courses,
-footer{
-padding: 48px 0;
+footer {
+    padding: 48px 0;
 }
+
 /*about section*/
-#About{
-background-color: #ecf8bc;
+#About {
+    background-color: #ecf8bc;
 
 }
 
-h2{
+h2 {
     font-size: 60px;
     text-align: center;
     margin-bottom: 24px;
 }
-.section__Description{
+
+.section__Description {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about__img--wrapper{
+
+.about__img--wrapper {
     width: 25%;
     padding: 0 24px;
 }
-img{
-width: 100%;
+
+img {
+    width: 100%;
 }
-.section__Description--wrapper{
+
+.section__Description--wrapper {
     width: 60%;
     padding: 0 24px;
 }
 
-.section__Description--para{
+.section__Description--para {
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 24px;
@@ -106,7 +121,7 @@ width: 100%;
 projects
 */
 
-#Projects{
+#Projects {
     background-color: #cefeff;
 }
 
@@ -114,43 +129,113 @@ projects
  Courses
 */
 
-#Courses{
+#Courses {
     background-color: #dce9ff;
-    
+
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
 }
-input,textarea{
-padding: 16px 24px;
-margin-bottom: 24px;
-font-size: 20px;
+
+input,
+textarea {
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    font-size: 20px;
 }
 
 /*
 footer
 */
 
-footer{
+footer {
     background-color: #aaf5ff;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer__logo{
+.footer__logo {
     max-width: 480px;
-margin-bottom: 16px;
+    margin-bottom: 16px;
 
 }
 
-.footer__links{
-margin-bottom: 32px;
+.footer__links {
+    margin-bottom: 32px;
 }
 
-.footer__link{
+.footer__link {
     padding: 0 16px;
+}
+
+/*  it is for phone large phones and tablets*/
+@media (max-width: 728px) {
+    .raw {
+
+        flex-direction: column;
+    }
+
+    .home__desk {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1 {
+        font-size: 55px;
+    }
+
+    .subheding {
+        font-size: 24px;
+    }
+
+   
+
+    .home__desk--button {
+        max-width: 240px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section__Description {
+        flex-direction: column;
+    }
+
+    .section__Description--wrapper {
+        width: 100%;
+    }
+
+    .about__img--wrapper {
+        width: 100%;
+    }
+
+    #projects .section__Description {
+        flex-direction: column-reverse;
+    }
+
+    #Courses form {
+        padding: 0 24px;
+        margin: 0 auto;
+
+    }
+
+    footer {
+padding: 24px 24px;
+
+    }
+    .footer__logo {
+        max-width: 400px;
+    }
+    .footer__links{
+        display: flex;
+    }
 }
